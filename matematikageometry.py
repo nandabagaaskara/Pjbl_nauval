@@ -81,8 +81,6 @@ elif pilihan == "Lingkaran":
             st.metric("Keliling", value=keliling, border =True)
         st.snow()
 elif pilihan == "Trapesium":
-        st.title("Trepesium")
-        st.markdown("Menghitung luas dan keliling trapesium")
         st.title("Trapesium")
         st.markdown("Menghitung luas dan keliling trapesium")
         alas1 = st.number_input("Masukkan Alas 1")
