@@ -188,7 +188,7 @@ elif pilihan == "Trapesium":
         sisi4 = st.number_input("Masukkan Sisi 4")
         if st.button("Hitung", type="primary"):
             if st.button("Hitung", type="primary"):
-            luas = 0.5 * (alas1 + alas2) * tinggi
+                luas = 0.5 * (alas1 + alas2) * tinggi
             keliling = alas1 + alas2 + alas3 + alas4
         st.write(f"Luas Lingkaran: {luas}")
         st.write(f"Keliling Lingkaran: {keliling}")
