@@ -9,7 +9,7 @@ with st.sidebar:
         st.image("mtk.jpg")
         
         st.title("Bangun Datar")
-        pilihan = st.selectbox("Pilih Bangun Datar",["Persegi","Persegi Panjang","Segitiga","Lingkaran"])
+        pilihan = st.selectbox("Pilih Bangun Datar",["Persegi","Persegi Panjang","Segitiga","Lingkaran", "Trapesium"])
         st.caption("Aplikasi ini dibuat oleh ***Nauval***")
 if pilihan == "Persegi":
     st.title("Persegi")
@@ -80,3 +80,24 @@ elif pilihan == "Lingkaran":
         with col2:
             st.metric("Keliling", value=keliling, border =True)
         st.snow()
+    elif pilihan == "Trapesium":
+        st.title("Trepesium")
+        st.markdown("Menghitung luas dan keliling trapesium")
+        st.title("Trapesium")
+        st.markdown("Menghitung luas dan keliling trapesium")
+        alas1 = st.number_input("Masukkan Alas 1")
+        alas2 = st.number_input("Masukkan Alas 2")
+        tinggi = st.number_input("Masukkan Tinggi")
+        sisi1 = st.number_input("Masukkan Sisi 1")
+        sisi2 = st.number_input("Masukkan Sisi 2")
+        sisi3 = st.number_input("Masukkan Sisi 3")
+        sisi4 = st.number_input("Masukkan Sisi 4")
+        if st.button("Hitung", type="primary"):
+            luas = 0.5 * (alas1 + alas2) * tinggi
+            keliling = sisi1 + sisi2 + sisi3 + sisi4
+            st.success(f"Luas Trapesium Adalah {luas: .2f} Dan Keliling Trapesium Adalah {keliling: .2f}")
+            st.balloons()
+        
+        
+
+    
