@@ -80,7 +80,7 @@ elif pilihan == "Lingkaran":
         with col2:
             st.metric("Keliling", value=keliling, border =True)
         st.snow()
-    elif pilihan == "Trapesium":
+elif pilihan == "Trapesium":
         st.title("Trepesium")
         st.markdown("Menghitung luas dan keliling trapesium")
         st.title("Trapesium")
