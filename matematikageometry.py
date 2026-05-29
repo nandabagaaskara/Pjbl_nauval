@@ -93,8 +93,8 @@ elif pilihan == "Trapesium":
         if st.button("Hitung", type="primary"):
             luas = 0.5 * (alas1 + alas2) * tinggi
             keliling = sisi1 + sisi2 + sisi3 + sisi4
-        st.write(f"Luas Lingkaran: {luas}")
-        st.write(f"Keliling Lingkaran: {keliling}")
+        st.write(f"Luas Trapesium: {luas}")
+        st.write(f"Keliling Trapesium: {keliling}")
         st.success(f"Perhitungan berhasil! Luasnya {luas:.2f} dan kelilingnya {keliling:.2f}")
         col1 , col2 , col3 = st.columns([1,2,1])
         with col1:
