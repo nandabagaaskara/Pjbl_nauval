@@ -84,14 +84,14 @@ elif pilihan == "Trapesium":
     st.title("Trapesium")
     st.markdown("Menghitung luas dan keliling trapesium")
 
-    alas1 = st.number_input("Masukkan Alas 1")
-    alas2 = st.number_input("Masukkan Alas 2")
-    tinggi = st.number_input("Masukkan Tinggi")
+    alas1 = st.number_input("Masukkan Alas 1", 0)
+    alas2 = st.number_input("Masukkan Alas 2", 0)
+    tinggi = st.number_input("Masukkan Tinggi", 0)
 
-    sisi1 = st.number_input("Masukkan Sisi 1")
-    sisi2 = st.number_input("Masukkan Sisi 2")
-    sisi3 = st.number_input("Masukkan Sisi 3")
-    sisi4 = st.number_input("Masukkan Sisi 4")
+    sisi1 = st.number_input("Masukkan Sisi 1", 0)
+    sisi2 = st.number_input("Masukkan Sisi 2", 0)
+    sisi3 = st.number_input("Masukkan Sisi 3", 0)
+    sisi4 = st.number_input("Masukkan Sisi 4", 0)
 
     if st.button("Hitung", type="primary"):
         luas = 0.5 * (alas1 + alas2) * tinggi
