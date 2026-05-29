@@ -81,26 +81,26 @@ elif pilihan == "Lingkaran":
             st.metric("Keliling", value=keliling, border =True)
         st.snow()
 elif pilihan == "Trapesium":
-        st.title("Trapesium")
-        st.markdown("Menghitung luas dan keliling trapesium")
-        alas1 = st.number_input("Masukkan Alas 1")
-        alas2 = st.number_input("Masukkan Alas 2")
-        tinggi = st.number_input("Masukkan Tinggi")
-        sisi1 = st.number_input("Masukkan Sisi 1")
-        sisi2 = st.number_input("Masukkan Sisi 2")
-        sisi3 = st.number_input("Masukkan Sisi 3")
-        sisi4 = st.number_input("Masukkan Sisi 4")
-        if st.button("Hitung", type="primary"):
-            luas = 0.5 * (alas1 + alas2) * tinggi
-            keliling = sisi1 + sisi2 + sisi3 + sisi4
-        st.write(f"Luas Trapesium: {luas}")
-        st.write(f"Keliling Trapesium: {keliling}")
-        st.success(f"Perhitungan berhasil! Luasnya {luas:.2f} dan kelilingnya {keliling:.2f}")
-        col1 , col2 , col3 = st.columns([1,2,1])
-        with col1:
-            st.metric("Luas", value=luas, border =True)
-        with col2:
-            st.metric("Keliling", value=keliling, border =True)
+    st.title("Trapesium")
+    st.markdown("Menghitung luas dan keliling trapesium")
+
+    alas1 = st.number_input("Masukkan Alas 1")
+    alas2 = st.number_input("Masukkan Alas 2")
+    tinggi = st.number_input("Masukkan Tinggi")
+
+    sisi1 = st.number_input("Masukkan Sisi 1")
+    sisi2 = st.number_input("Masukkan Sisi 2")
+    sisi3 = st.number_input("Masukkan Sisi 3")
+    sisi4 = st.number_input("Masukkan Sisi 4")
+
+    if st.button("Hitung", type="primary"):
+        luas = 0.5 * (alas1 + alas2) * tinggi
+        keliling = sisi1 + sisi2 + sisi3 + sisi4
+
+        st.success(
+            f"Luas Trapesium Adalah {luas:.2f} Dan Keliling Trapesium Adalah {keliling:.2f}"
+        )
+
         st.snow()
             
         
