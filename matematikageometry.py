@@ -57,7 +57,7 @@ elif pilihan == "Segitiga":
     if st.button("Hitung", type="primary"):
         st.write(f"Luas Segitiga: {luas}")
         st.write(f"Keliling Segitiga: {keliling}")
-        st.success(f"Perhitungan berhasil! Luasnya {luas} dan kelilingnya {keliling}")
+        st.success(f"Perhitungan berhasil! Luasnya {luas:.2f} dan kelilingnya {keliling:.2f}")
         col1 , col2 , col3 = st.columns([1,2,1])
         with col1:
             st.metric("Luas", value=luas, border =True)
